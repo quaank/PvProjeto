@@ -15,12 +15,15 @@ namespace ProjetoPv.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private UserManager<ProjetoPvUser> _userManager;
-         
+        private RoleManager<IdentityRole> _roleManager;
 
-        public HomeController(UserManager<ProjetoPvUser> userManager, ILogger<HomeController> logger)
+
+
+        public HomeController( RoleManager<IdentityRole> roleManager,UserManager<ProjetoPvUser> userManager, ILogger<HomeController> logger)
         {
             _logger = logger;
             _userManager = userManager;
+            _roleManager = roleManager;
         }
         [HttpGet]
         public IActionResult Index()
@@ -37,9 +40,10 @@ namespace ProjetoPv.Controllers
 
         public async Task<IActionResult> Edit(int? id)
         {
-           
-            ViewData["Id"] = new SelectList(_userManager.Users, "Email");
-            return View(_userManager.Users.ToList());
+            var roles = _roleManager.Roles.ToList();
+            return View(roles);
+            //ViewData["Id"] = new SelectList(_userManager.Users,"Id");
+            //return View(_userManager.Users.ToList());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

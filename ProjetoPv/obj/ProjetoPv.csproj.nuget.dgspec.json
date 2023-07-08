@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedroaferreira\\Desktop\\PV\\ProjetoPv\\ProjetoPv\\ProjetoPv.csproj": {}
+    "C:\\Users\\tinacio\\Source\\Repos\\PvProjeto\\ProjetoPv\\ProjetoPv.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedroaferreira\\Desktop\\PV\\ProjetoPv\\ProjetoPv\\ProjetoPv.csproj": {
+    "C:\\Users\\tinacio\\Source\\Repos\\PvProjeto\\ProjetoPv\\ProjetoPv.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedroaferreira\\Desktop\\PV\\ProjetoPv\\ProjetoPv\\ProjetoPv.csproj",
+        "projectUniqueName": "C:\\Users\\tinacio\\Source\\Repos\\PvProjeto\\ProjetoPv\\ProjetoPv.csproj",
         "projectName": "ProjetoPv",
-        "projectPath": "C:\\Users\\pedroaferreira\\Desktop\\PV\\ProjetoPv\\ProjetoPv\\ProjetoPv.csproj",
-        "packagesPath": "C:\\Users\\pedroaferreira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedroaferreira\\Desktop\\PV\\ProjetoPv\\ProjetoPv\\obj\\",
+        "projectPath": "C:\\Users\\tinacio\\Source\\Repos\\PvProjeto\\ProjetoPv\\ProjetoPv.csproj",
+        "packagesPath": "C:\\Users\\tinacio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tinacio\\Source\\Repos\\PvProjeto\\ProjetoPv\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pedroaferreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tinacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
