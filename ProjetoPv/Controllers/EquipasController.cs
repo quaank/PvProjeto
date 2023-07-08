@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -44,11 +46,25 @@ namespace ProjetoPv.Controllers
 
             return View(equipas);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Equipas/Create
         public IActionResult Create()
         {
-            ViewData["TreinadoresId"] = new SelectList(_context.Treinadores, "Id", "Nome");
+
+            var treinadores = _context.Treinadores.ToList();
+            var equipas = _context.Equipas.ToList();
+
+            var treinadoresSemEquipas = new List<Treinadores>();
+
+            foreach (var treinador in treinadores)
+            {
+                if (equipas.All(e => e.TreinadoresId != treinador.Id))
+                {
+                    treinadoresSemEquipas.Add(treinador);
+                }
+            }
+
+            ViewData["TreinadoresId"] = new SelectList(treinadoresSemEquipas, "Id", "Nome");
             return View();
         }
 
@@ -68,7 +84,7 @@ namespace ProjetoPv.Controllers
             ViewData["TreinadoresId"] = new SelectList(_context.Treinadores, "Id", "Nome", equipas.TreinadoresId);
             return View(equipas);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Equipas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -121,7 +137,7 @@ namespace ProjetoPv.Controllers
             ViewData["TreinadoresId"] = new SelectList(_context.Treinadores, "Id", "Nome", equipas.TreinadoresId);
             return View(equipas);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Equipas/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

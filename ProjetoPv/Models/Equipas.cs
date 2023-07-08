@@ -10,7 +10,8 @@ namespace ProjetoPv.Models
         public int ModalidadesId { get; set; }
         public Modalidades? Modalidade { get; set; }
         public int Categoria { get; set; }
-        public int TreinadoresId { get; set; }  
+        public int TreinadoresId { get; set; }
+        [DisplayName("Nome do Treinador")]  
         public Treinadores? Treinador { get; set; }
 
     }

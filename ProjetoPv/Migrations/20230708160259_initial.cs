@@ -56,8 +56,7 @@ namespace ProjetoPv.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Contacto = table.Column<int>(type: "int", nullable: false),
-                    Qualificacoes = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EquipasId = table.Column<int>(type: "int", nullable: false)
+                    Qualificacoes = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -225,9 +224,10 @@ namespace ProjetoPv.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EquipasId = table.Column<int>(type: "int", nullable: false),
+                    EquipaOponente = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Data = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Localidade = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Resultados = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Resultados = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -263,13 +263,13 @@ namespace ProjetoPv.Migrations
 
             migrationBuilder.InsertData(
                 table: "Treinadores",
-                columns: new[] { "Id", "Contacto", "EquipasId", "Nome", "Qualificacoes" },
-                values: new object[] { 1, 919523432, 1, "Jose", "Muitas" });
+                columns: new[] { "Id", "Contacto", "Nome", "Qualificacoes" },
+                values: new object[] { 1, 919523432, "Jose", "Muitas" });
 
             migrationBuilder.InsertData(
                 table: "Treinadores",
-                columns: new[] { "Id", "Contacto", "EquipasId", "Nome", "Qualificacoes" },
-                values: new object[] { 2, 91952322, 2, "Pedro", "Muitas" });
+                columns: new[] { "Id", "Contacto", "Nome", "Qualificacoes" },
+                values: new object[] { 2, 91952322, "Pedro", "Muitas" });
 
             migrationBuilder.InsertData(
                 table: "Equipas",
@@ -333,8 +333,7 @@ namespace ProjetoPv.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Equipas_TreinadoresId",
                 table: "Equipas",
-                column: "TreinadoresId",
-                unique: true);
+                column: "TreinadoresId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Treino_EquipasId",

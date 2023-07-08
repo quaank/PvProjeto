@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +24,7 @@ namespace ProjetoPv.Controllers
         // GET: Competicoes
         public async Task<IActionResult> Index()
         {
-            var projetoPvContext = _context.Competicoes.Include(c => c.EquipasParticipantes);
+            var projetoPvContext = _context.Competicoes.Include(c => c.Equipa);
             return View(await projetoPvContext.ToListAsync());
         }
 
@@ -35,7 +37,7 @@ namespace ProjetoPv.Controllers
             }
 
             var competicoes = await _context.Competicoes
-                .Include(c => c.EquipasParticipantes)
+                .Include(c => c.Equipa)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (competicoes == null)
             {
@@ -44,11 +46,11 @@ namespace ProjetoPv.Controllers
 
             return View(competicoes);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Competicoes/Create
         public IActionResult Create()
         {
-            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Id");
+            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome");
             return View();
         }
 
@@ -57,7 +59,7 @@ namespace ProjetoPv.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,EquipasId,Data,Localidade,Resultados")] Competicoes competicoes)
+        public async Task<IActionResult> Create([Bind("Id,Nome,EquipasId,EquipaOponente,Data,Localidade,Resultados")] Competicoes competicoes)
         {
             if (ModelState.IsValid)
             {
@@ -65,11 +67,12 @@ namespace ProjetoPv.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Id", competicoes.EquipasId);
+            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome", competicoes.EquipasId);
             return View(competicoes);
         }
 
         // GET: Competicoes/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Competicoes == null)
@@ -82,7 +85,7 @@ namespace ProjetoPv.Controllers
             {
                 return NotFound();
             }
-            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Id", competicoes.EquipasId);
+            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome", competicoes.EquipasId);
             return View(competicoes);
         }
 
@@ -91,7 +94,7 @@ namespace ProjetoPv.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,EquipasId,Data,Localidade,Resultados")] Competicoes competicoes)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,EquipasId,EquipaOponente,Data,Localidade,Resultados")] Competicoes competicoes)
         {
             if (id != competicoes.Id)
             {
@@ -118,10 +121,10 @@ namespace ProjetoPv.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Id", competicoes.EquipasId);
+            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome", competicoes.EquipasId);
             return View(competicoes);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Competicoes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -131,7 +134,7 @@ namespace ProjetoPv.Controllers
             }
 
             var competicoes = await _context.Competicoes
-                .Include(c => c.EquipasParticipantes)
+                .Include(c => c.Equipa)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (competicoes == null)
             {

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,10 +24,8 @@ namespace ProjetoPv.Controllers
         // GET: Treinadores
         public async Task<IActionResult> Index()
         {
-           
-            var treinadores = _context.Treinadores.Include(t => t.Equipa);
-
-            return View(await treinadores.ToListAsync());
+      
+            return View(await _context.Treinadores.ToListAsync());
         }
 
         // GET: Treinadores/Details/5
@@ -45,7 +45,7 @@ namespace ProjetoPv.Controllers
 
             return View(treinadores);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Treinadores/Create
         public IActionResult Create()
         {
@@ -68,7 +68,7 @@ namespace ProjetoPv.Controllers
             }
             return View(treinadores);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Treinadores/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -119,7 +119,7 @@ namespace ProjetoPv.Controllers
             }
             return View(treinadores);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Treinadores/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

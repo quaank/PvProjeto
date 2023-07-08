@@ -20,7 +20,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="Modalidade" class="control-label"></label>
-                <input asp-for="Modalidade" class="form-control" />
+                <select asp-for="Modalidade" class="form-control" />
+                @{
+                    foreach (Modalidades modalidades in (Modalidades[])Enum.GetValues(typeof(Modalidades)))
+
+                    {
+                        <option value="@modalidades.ToString()">@modalidades.ToString()</option>
+
+                    }
+
+                }
+                </select>
                 <span asp-validation-for="Modalidade" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -29,7 +39,7 @@
                 <span asp-validation-for="Categoria" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TreinadoresId" class="control-label"></label>
+                <label asp-for="Treinador.Nome" class="control-label"></label>
                 <select asp-for="TreinadoresId" class ="form-control" asp-items="ViewBag.TreinadoresId"></select>
             </div>
             <div class="form-group">

@@ -9,7 +9,7 @@ namespace ProjetoPv.Models
         public string Nome { get; set; }
         public int Contacto { get; set; }
         public string Qualificacoes { get; set; }
-        public int EquipasId { get; set; }
-        public Equipas? Equipa { get; set; }
+        
+        
     }
 }

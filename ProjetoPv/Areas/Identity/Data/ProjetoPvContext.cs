@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using ProjetoPv.Areas.Identity.Data;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ProjetoPv.Models;
 using System.Reflection.Emit;
 
@@ -23,10 +23,6 @@ public class ProjetoPvContext : IdentityDbContext<ProjetoPvUser>
         // Customize the ASP.NET Identity model and override the defaults if needed.
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations afterx calling base.OnModelCreating(builder);
-        builder.Entity<Equipas>()
-           .HasOne(e => e.Treinador)
-           .WithOne(t => t.Equipa)
-           .HasForeignKey<Equipas>(e => e.TreinadoresId);
 
       
 
@@ -58,7 +54,6 @@ public class ProjetoPvContext : IdentityDbContext<ProjetoPvUser>
                 Id  = 1,
                 Nome = "Jose",
                 Contacto = 919523432,
-                EquipasId = 1,
                 Qualificacoes = "Muitas"
             }
             );
@@ -68,7 +63,6 @@ public class ProjetoPvContext : IdentityDbContext<ProjetoPvUser>
                Id = 2,
                Nome = "Pedro",
                Contacto = 91952322,
-               EquipasId = 2,
                Qualificacoes = "Muitas"
            }
            );
@@ -85,4 +79,6 @@ public class ProjetoPvContext : IdentityDbContext<ProjetoPvUser>
     public DbSet<ProjetoPv.Models.Atletas>? Atletas { get; set; }
 
     public DbSet<ProjetoPv.Models.Treino>? Treino { get; set; }
+
+
 }

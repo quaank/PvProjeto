@@ -4,6 +4,7 @@ namespace ProjetoPv.Models
 {
     public class Atletas
     {
+
         public int Id { get; set; }
         [DisplayName("Nome do Atleta")]
         public string Nome { get; set; }
@@ -11,6 +12,7 @@ namespace ProjetoPv.Models
         public int ModalidadesId { get; set; }
         public Modalidades? Modalidade { get; set; }
         public int EquipasId { get; set; }
+        [DisplayName("Nome da Equipa")]
         public Equipas? Equipa { get; set; }
         public string Posicao { get; set; }
     }

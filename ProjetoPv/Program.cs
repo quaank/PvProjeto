@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ProjetoPv.Areas.Identity.Data;
-using ProjetoPv.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ProjetoPvContextConnection") ?? throw new InvalidOperationException("Connection string 'ProjetoPvContextConnection' not found.");
@@ -47,8 +46,8 @@ using (var scope = app.Services.CreateScope())
 
 
 
-    var roles = new[] { "Admin", "User", "Treinadores", "Atletas" };
 
+    var roles = new[] { "Admin", "User", "Treinadores", "Atletas" };
 
 
     foreach (var role in roles)
@@ -104,8 +103,43 @@ using (var scope = app.Services.CreateScope())
         await userManager.AddToRoleAsync(user, "Admin");
 
     }
+    using (var scope2 = app.Services.CreateScope())
+
+    {
+
+        var userManager2 = scope.ServiceProvider.GetRequiredService<UserManager<ProjetoPvUser>>();
 
 
 
-}
+        string email2 = "treinador@treinador.com";
+
+        string password2 = "Treinador123@";
+
+        if (await userManager2.FindByEmailAsync(email2) == null)
+
+        {
+
+            var user2 = new ProjetoPvUser();
+
+            user2.PhoneNumber = "919347321";
+
+            user2.Email = email2;
+
+            user2.UserName = email2;
+
+            user2.EmailConfirmed = true;
+
+
+
+            await userManager2.CreateAsync(user2, password2);
+
+
+
+            await userManager2.AddToRoleAsync(user2, "Treinadores");
+
+            }
+
+        }
+    }
+
 app.Run();

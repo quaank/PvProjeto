@@ -22,6 +22,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Equipa)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Equipa.Treinador)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -35,8 +38,11 @@
                 @Html.DisplayFor(modelItem => item.Localizacao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Equipa.Id)
+                @Html.DisplayFor(modelItem => item.Equipa.Nome)
             </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Equipa.Treinador.Nome)
+             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |

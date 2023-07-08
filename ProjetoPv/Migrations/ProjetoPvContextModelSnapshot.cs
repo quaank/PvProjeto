@@ -270,6 +270,10 @@ namespace ProjetoPv.Migrations
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("EquipaOponente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("EquipasId")
                         .HasColumnType("int");
 
@@ -282,7 +286,6 @@ namespace ProjetoPv.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Resultados")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -318,8 +321,7 @@ namespace ProjetoPv.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TreinadoresId")
-                        .IsUnique();
+                    b.HasIndex("TreinadoresId");
 
                     b.ToTable("Equipas");
 
@@ -355,9 +357,6 @@ namespace ProjetoPv.Migrations
                     b.Property<int>("Contacto")
                         .HasColumnType("int");
 
-                    b.Property<int>("EquipasId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -375,7 +374,6 @@ namespace ProjetoPv.Migrations
                         {
                             Id = 1,
                             Contacto = 919523432,
-                            EquipasId = 1,
                             Nome = "Jose",
                             Qualificacoes = "Muitas"
                         },
@@ -383,7 +381,6 @@ namespace ProjetoPv.Migrations
                         {
                             Id = 2,
                             Contacto = 91952322,
-                            EquipasId = 2,
                             Nome = "Pedro",
                             Qualificacoes = "Muitas"
                         });
@@ -478,20 +475,20 @@ namespace ProjetoPv.Migrations
 
             modelBuilder.Entity("ProjetoPv.Models.Competicoes", b =>
                 {
-                    b.HasOne("ProjetoPv.Models.Equipas", "EquipasParticipantes")
+                    b.HasOne("ProjetoPv.Models.Equipas", "Equipa")
                         .WithMany()
                         .HasForeignKey("EquipasId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("EquipasParticipantes");
+                    b.Navigation("Equipa");
                 });
 
             modelBuilder.Entity("ProjetoPv.Models.Equipas", b =>
                 {
                     b.HasOne("ProjetoPv.Models.Treinadores", "Treinador")
-                        .WithOne("Equipa")
-                        .HasForeignKey("ProjetoPv.Models.Equipas", "TreinadoresId")
+                        .WithMany()
+                        .HasForeignKey("TreinadoresId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -506,11 +503,6 @@ namespace ProjetoPv.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Equipa");
-                });
-
-            modelBuilder.Entity("ProjetoPv.Models.Treinadores", b =>
-                {
                     b.Navigation("Equipa");
                 });
 #pragma warning restore 612, 618

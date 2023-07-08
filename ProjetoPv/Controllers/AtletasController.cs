@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using ProjetoPv.Models;
 
 namespace ProjetoPv.Controllers
 {
+    
     public class AtletasController : Controller
     {
         private readonly ProjetoPvContext _context;
@@ -44,7 +46,7 @@ namespace ProjetoPv.Controllers
 
             return View(atletas);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Atletas/Create
         public IActionResult Create()
         {
@@ -68,7 +70,7 @@ namespace ProjetoPv.Controllers
             ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome", atletas.EquipasId);
             return View(atletas);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Atletas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -121,6 +123,7 @@ namespace ProjetoPv.Controllers
             ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome", atletas.EquipasId);
             return View(atletas);
         }
+        [Authorize(Roles = "Admin")]
 
         // GET: Atletas/Delete/5
         public async Task<IActionResult> Delete(int? id)
