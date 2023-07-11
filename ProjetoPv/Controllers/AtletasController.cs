@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -15,18 +16,36 @@ namespace ProjetoPv.Controllers
     public class AtletasController : Controller
     {
         private readonly ProjetoPvContext _context;
-
-        public AtletasController(ProjetoPvContext context)
+        private UserManager<ProjetoPvUser> _userManager;
+        private RoleManager<IdentityRole> _roleManager;
+        private bool isFirstTime = false;
+        public AtletasController(ProjetoPvContext context, UserManager<ProjetoPvUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
+
         // GET: Atletas
+
         public async Task<IActionResult> Index()
         {
+            
+            
+                var user = await _userManager.GetUserAsync(User);
+                if (await _userManager.IsInRoleAsync(user, "Atletas") && !user.HasClicked)
+                {
+                user.HasClicked = true;
+                await _userManager.UpdateAsync(user);
+                return RedirectToAction("Create");
+                }
+            
+
             var projetoPvContext = _context.Atletas.Include(a => a.Equipa);
             return View(await projetoPvContext.ToListAsync());
         }
+
+
 
         // GET: Atletas/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -46,7 +65,7 @@ namespace ProjetoPv.Controllers
 
             return View(atletas);
         }
-        [Authorize(Roles = "Admin")]
+       
         // GET: Atletas/Create
         public IActionResult Create()
         {
@@ -70,7 +89,7 @@ namespace ProjetoPv.Controllers
             ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome", atletas.EquipasId);
             return View(atletas);
         }
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = ("Admin"))]
         // GET: Atletas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
