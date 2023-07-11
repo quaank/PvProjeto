@@ -9,5 +9,6 @@ namespace ProjetoPv.Areas.Identity.Data;
 // Add profile data for application users by adding properties to the ProjetoPvUser class
 public class ProjetoPvUser : IdentityUser
 {
+    public bool HasClicked{ get; set; }
 }
 

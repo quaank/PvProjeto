@@ -12,7 +12,7 @@ using ProjetoPv.Areas.Identity.Data;
 namespace ProjetoPv.Migrations
 {
     [DbContext(typeof(ProjetoPvContext))]
-    [Migration("20230710235049_initial")]
+    [Migration("20230711112232_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -178,6 +178,9 @@ namespace ProjetoPv.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("HasClicked")
                         .HasColumnType("bit");
 
                     b.Property<bool>("LockoutEnabled")
