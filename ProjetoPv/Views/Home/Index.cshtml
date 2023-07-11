@@ -1,22 +1,26 @@
-﻿@using ProjetoPv.Areas.Identity.Data;
-@model IEnumerable<ProjetoPvUser>
-@{
-    ViewData["Tittle"] = "HomePage";
-}
-<table class = "table">
-    <tr>
-        <th>
-            Email
-        </th>
+﻿@model IEnumerable<dynamic>
 
-    </tr>
-    @foreach ( var item in Model)
-    {
+<h1>Users</h1>
+
+<table class="table">
+    <thead>
         <tr>
-            <td>
-                @item.Email <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-            </td>
+            <th>Username</th>
+            <th>Role</th>
+            <th></th>
         </tr>
-
-    }
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Username</td>
+                <td>@user.Role</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@user.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
+

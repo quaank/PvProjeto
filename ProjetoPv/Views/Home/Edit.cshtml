@@ -1,52 +1,23 @@
-﻿@using ProjetoPv.Areas.Identity.Data;
-@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
-
+﻿@model ChangeRoleViewModel
 @{
     ViewData["Title"] = "Edit";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>Edit</h1>
 
-<h3>User Roles</h3>
-<div class="form-group">
-    <label class="control-label"></label>
-    <select  class="form-control" />
-    @{
-        @foreach (var role in Model)
-        {
-            <option value="@role.Id">@role.Name</option>
+<h1>@ViewData["Title"]</h1>
 
-        }
-
-    }
-    </select>
-    <span  class="text-danger"></span>
-</div>
-
-
-
-
-
-
-@*  <div class="form-group">
-    @foreach (var item in Model)
-    {
-        <div class="form-group">
-            <label asp-for="@item.Email" class="control-label"></label>
-            <select asp-for="@item.Email" class="form-control" asp-items="ViewBag.Id"></select>
+<div>
+    <h4>@Model.UserEmail</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+                <input type="hidden" asp-for="UserId" />
+                <div class="form-group">
+                    <label for="UserRole">Role</label>
+                    <select asp-for="UserRole" asp-items="@(new SelectList(Model.AllRoles, "Name", "Name"))" class="form-control"></select>
+                </div>
+                <button type="submit" class="btn btn-default">Update</button>
+            </form>
         </div>
-        
-    }*@
-   @* @foreach (var role in Model)
-    {
-        <tr>
-            <td>@role.Id</td>
-            <td>@role.Name</td>
-        </tr>
-    }
-    </div>*@
-<div class="form-group">
-    <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
 </div>
-
-
