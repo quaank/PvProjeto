@@ -23,38 +23,51 @@
                 <input asp-for="DataNascimento" class="form-control" />
                 <span asp-validation-for="DataNascimento" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            
+           
+            <div class="form-group" >
                 <label asp-for="Modalidade" class="control-label"></label>
-                <select asp-for="Modalidade" class="form-control" >
-                @{
-                    foreach (Modalidades modalidades in (Modalidades[])Enum.GetValues(typeof(Modalidades)))
+                <select asp-for="Modalidade" class="form-control">
+                    @{
+                        foreach (Modalidades modalidades in (Modalidades[])Enum.GetValues(typeof(Modalidades)))
 
-                    {
-                        <option value="@modalidades.ToString()">@modalidades.ToString()</option>
+                        {
+                            <option value="@modalidades.ToString()">@modalidades.ToString()</option>
+
+                        }
 
                     }
-
-                }
                 </select>
                 <span asp-validation-for="Modalidade" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Equipa.Nome" class="control-label"></label>
-                <select asp-for="EquipasId" class ="form-control" asp-items="ViewBag.EquipasId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Posicao" class="control-label"></label>
                 <input asp-for="Posicao" class="form-control" />
                 <span asp-validation-for="Posicao" class="text-danger"></span>
             </div>
+            
+            
+            
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+            <div class="form-group" style="visibility:hidden">
+                <label asp-for="EquipasId" class="control-label"></label>
+                <input asp-for="EquipasId" class="form-control" />
+                <span asp-validation-for="EquipasId" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="visibility:hidden">
+                <label asp-for="AspNetUsersId" class="control-label"></label>
+                <input asp-for="AspNetUsersId" class="form-control" value="@ViewBag.User" readonly />
+                <span asp-validation-for="AspNetUsersId" class="text-danger"></span>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
+
 

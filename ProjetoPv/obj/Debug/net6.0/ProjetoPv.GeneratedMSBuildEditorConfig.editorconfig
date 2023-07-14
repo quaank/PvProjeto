@@ -9,185 +9,365 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjetoPv
 build_property.RootNamespace = ProjetoPv
-build_property.ProjectDir = C:\Users\pedroaferreira\Desktop\PV\ProjetoPv\PvProjeto\ProjetoPv\
+build_property.ProjectDir = C:\Users\tiago\source\repos\PvProjeto\ProjetoPv\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\pedroaferreira\Desktop\PV\ProjetoPv\PvProjeto\ProjetoPv
+build_property.MSBuildProjectDirectory = C:\Users\tiago\source\repos\PvProjeto\ProjetoPv
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Create.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xBY2NvdW50XENvbmZpcm1FbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xBY2NvdW50XEZvcmdvdFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xBY2NvdW50XExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xBY2NvdW50XExvZ291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xBY2NvdW50XFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xBY2NvdW50XFJlc2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xBY2NvdW50XF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxBcmVhc1xJZGVudGl0eVxQYWdlc1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xBdGxldGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xBdGxldGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xBdGxldGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xBdGxldGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xBdGxldGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xDb21wZXRpY29lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xDb21wZXRpY29lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xDb21wZXRpY29lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xDb21wZXRpY29lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xDb21wZXRpY29lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xFcXVpcGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xFcXVpcGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xFcXVpcGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xFcXVpcGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xFcXVpcGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Home/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xIb21lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xTaGFyZWRcX0xvZ2luUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbmFkb3Jlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbmFkb3Jlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbmFkb3Jlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbmFkb3Jlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbmFkb3Jlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbm9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbm9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbm9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbm9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xUcmVpbm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Atletas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRsZXRhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Delete.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Atletas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRsZXRhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Details.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Atletas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRsZXRhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Edit.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Atletas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRsZXRhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Atletas/Index.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Atletas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRsZXRhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Create.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Competicoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWNvZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Delete.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Competicoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWNvZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Details.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Competicoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWNvZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Edit.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Competicoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWNvZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Competicoes/Index.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Competicoes/Historico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWNvZXNcSGlzdG9yaWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Competicoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGV0aWNvZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Create.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Equipas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Delete.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Equipas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Details.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Equipas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Edit.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Equipas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Equipas/Index.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Equipas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Home/Edit.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Home/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Home/Index.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Home/Privacy.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Shared/Error.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Create.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treinadores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Delete.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treinadores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Details.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treinadores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Edit.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treinadores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treinadores/Index.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treinadores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5hZG9yZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Create.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treino/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5vXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Delete.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treino/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5vXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Details.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treino/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5vXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Edit.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treino/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5vXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Treino/Index.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Treino/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlaW5vXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/_ViewImports.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/_ViewStart.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pedroaferreira/Desktop/PV/ProjetoPv/PvProjeto/ProjetoPv/Views/Shared/_Layout.cshtml]
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/PvProjeto/ProjetoPv/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHZQcm9qZXRvXFByb2pldG9QdlxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-kn7k8nkgws
+
+[C:/Users/tiago/source/repos/PvProjeto/ProjetoPv/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xz2rfzvm6e

@@ -11153,19 +11153,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pedroaferreira\\.nuget\\packages\\": {}
+    "C:\\Users\\tiago\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedroaferreira\\Desktop\\PV\\ProjetoPv\\PvProjeto\\ProjetoPv\\ProjetoPv.csproj",
+      "projectUniqueName": "C:\\Users\\tiago\\Source\\Repos\\PvProjeto\\ProjetoPv\\ProjetoPv.csproj",
       "projectName": "ProjetoPv",
-      "projectPath": "C:\\Users\\pedroaferreira\\Desktop\\PV\\ProjetoPv\\PvProjeto\\ProjetoPv\\ProjetoPv.csproj",
-      "packagesPath": "C:\\Users\\pedroaferreira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedroaferreira\\Desktop\\PV\\ProjetoPv\\PvProjeto\\ProjetoPv\\obj\\",
+      "projectPath": "C:\\Users\\tiago\\Source\\Repos\\PvProjeto\\ProjetoPv\\ProjetoPv.csproj",
+      "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tiago\\Source\\Repos\\PvProjeto\\ProjetoPv\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\pedroaferreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

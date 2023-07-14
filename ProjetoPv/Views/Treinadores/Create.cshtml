@@ -28,14 +28,23 @@
                 <input asp-for="Qualificacoes" class="form-control" />
                 <span asp-validation-for="Qualificacoes" class="text-danger"></span>
             </div>
+
+           
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+            <div class="form-group" style="visibility:hidden">
+                <label asp-for="AspNetUsersId" class="control-label"></label>
+                <input asp-for="AspNetUsersId" class="form-control" value="@ViewBag.User" readonly />
+                <span asp-validation-for="AspNetUsersId" class="text-danger"></span>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 

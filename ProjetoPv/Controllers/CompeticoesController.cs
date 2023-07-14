@@ -24,7 +24,13 @@ namespace ProjetoPv.Controllers
         // GET: Competicoes
         public async Task<IActionResult> Index()
         {
-            var projetoPvContext = _context.Competicoes.Include(c => c.Equipa);
+            var projetoPvContext = _context.Competicoes.Where(t => t.Data > DateTime.Now).Include(c => c.Equipa);
+            return View(await projetoPvContext.ToListAsync());
+        }
+
+        public async Task<IActionResult> Historico()
+        {
+            var projetoPvContext = _context.Competicoes.Where(t => t.Data < DateTime.Now).Include(c => c.Equipa);
             return View(await projetoPvContext.ToListAsync());
         }
 
@@ -100,7 +106,6 @@ namespace ProjetoPv.Controllers
             {
                 return NotFound();
             }
-
             if (ModelState.IsValid)
             {
                 try
@@ -120,7 +125,9 @@ namespace ProjetoPv.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
+ 
             }
+
             ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome", competicoes.EquipasId);
             return View(competicoes);
         }

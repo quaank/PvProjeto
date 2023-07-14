@@ -30,10 +30,10 @@ public class ProjetoPvContext : IdentityDbContext<ProjetoPvUser>
             new Equipas
             {
                 Id = 1,
-                Categoria = 2,
+                Categoria = Categorias.sub19,
                 Modalidade = Modalidades.Futebol,
-                Nome = "Flamengo",
-                TreinadoresId = 1,
+                Nome = "Flamengo"
+                
 
 
             });
@@ -41,31 +41,31 @@ public class ProjetoPvContext : IdentityDbContext<ProjetoPvUser>
             new Equipas
             {
                 Id = 2,
-                Categoria = 3,
+                Categoria = Categorias.Principal,
                 Modalidade = Modalidades.Futebol,
-                Nome = "PSG",
-                TreinadoresId = 2,
+                Nome = "PSG"
+                
 
 
             });
-        builder.Entity<Treinadores>().HasData(
-            new Treinadores
-            {
-                Id  = 1,
-                Nome = "Jose",
-                Contacto = 919523432,
-                Qualificacoes = "Muitas"
-            }
-            );
-        builder.Entity<Treinadores>().HasData(
-           new Treinadores
-           {
-               Id = 2,
-               Nome = "Pedro",
-               Contacto = 91952322,
-               Qualificacoes = "Muitas"
-           }
-           );
+        //builder.Entity<Treinadores>().HasData(
+        //    new Treinadores
+        //    {
+        //        Id  = 1,
+        //        Nome = "Jose",
+        //        Contacto = 919523432,
+        //        Qualificacoes = "Muitas"
+        //    }
+        //    );
+        //builder.Entity<Treinadores>().HasData(
+        //   new Treinadores
+        //   {
+        //       Id = 2,
+        //       Nome = "Pedro",
+        //       Contacto = 91952322,
+        //       Qualificacoes = "Muitas"
+        //   }
+        //   );
 
 
 

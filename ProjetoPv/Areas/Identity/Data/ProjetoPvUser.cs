@@ -12,3 +12,4 @@ public class ProjetoPvUser : IdentityUser
     public bool HasClicked{ get; set; }
 }
 
+ 

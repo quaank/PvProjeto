@@ -9,7 +9,7 @@ namespace ProjetoPv.Models
         public string Nome { get; set; }
         public int Contacto { get; set; }
         public string Qualificacoes { get; set; }
-        
-        
+        public string AspNetUsersId { get; set; }
+
     }
 }

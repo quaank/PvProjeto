@@ -9,8 +9,9 @@ namespace ProjetoPv.Models
         public string Nome { get; set; }
         public int ModalidadesId { get; set; }
         public Modalidades? Modalidade { get; set; }
-        public int Categoria { get; set; }
-        public int TreinadoresId { get; set; }
+        public int CategoriaId { get; set; }
+        public Categorias? Categoria { get; set; }
+        public int? TreinadoresId { get; set; }
         [DisplayName("Nome do Treinador")]  
         public Treinadores? Treinador { get; set; }
 

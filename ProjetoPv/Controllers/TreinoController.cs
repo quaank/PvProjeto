@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -15,17 +16,75 @@ namespace ProjetoPv.Controllers
     public class TreinoController : Controller
     {
         private readonly ProjetoPvContext _context;
+        private UserManager<ProjetoPvUser> _userManager;
 
-        public TreinoController(ProjetoPvContext context)
+        public TreinoController(ProjetoPvContext context, UserManager<ProjetoPvUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Treino
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            var projetoPvContext = _context.Treino.Include(t => t.Equipa).Include(t => t.Equipa.Treinador);
-            return View(await projetoPvContext.ToListAsync());
+            var user = await _userManager.GetUserAsync(User);
+            var treinador = _context.Treinadores.ToList();
+            foreach (var item in treinador)
+            {
+                if (user.Id == item.AspNetUsersId)
+                {
+                    var treinadorId = item.Id;
+                    foreach (var item1 in _context.Equipas.ToList())
+                    {
+                        if (item1.TreinadoresId == treinadorId)
+                       {
+                            var Equipa = item1;
+                            if(id == 0 || id == null) 
+                            { 
+                            var projetoPvContext1 = _context.Treino.Where(t=> t.Data > DateTime.Now).Where(t => t.Equipa == Equipa);
+                            return View(await projetoPvContext1.ToListAsync());
+                            }
+                            var projetoPvContext2 = _context.Treino.Where(t => t.Data < DateTime.Now).Where(t => t.Equipa == Equipa).Include(t => t.Equipa).Include(t => t.Equipa.Treinador);
+                return View(await projetoPvContext2.ToListAsync());
+
+                        }
+                    }
+                }
+
+            }
+
+            var atleta = _context.Atletas.ToList();
+            foreach (var item in atleta)
+            {
+                if (user.Id == item.AspNetUsersId)
+                {
+                    var atletaId = item;
+                    foreach (var item1 in _context.Equipas.ToList())
+                    {
+                        if (item1.Id == atletaId.EquipasId)
+                        {
+                            var Equipa = item1;
+                            if (id == 0 || id != null)
+                            {
+                                var projetoPvContext3 = _context.Treino.Where(t => t.Data > DateTime.Now).Where(t => t.Equipa == Equipa);
+                                return View(await projetoPvContext3.ToListAsync());
+                            }
+                            var projetoPvContext4 = _context.Treino.Where(t => t.Data < DateTime.Now).Where(t => t.Equipa == Equipa).Include(t => t.Equipa).Include(t => t.Equipa.Treinador);
+                            return View(await projetoPvContext4.ToListAsync());
+
+                        }
+                    }
+                }
+
+            }
+
+            if (id == 0 || id == null)
+            {
+                var projetoPvContext5 = _context.Treino.Where(t => t.Data > DateTime.Now).Include(t => t.Equipa).Include(t => t.Equipa.Treinador);
+                return View(await projetoPvContext5.ToListAsync());
+            }
+            var projetoPvContext6 = _context.Treino.Where(t => t.Data < DateTime.Now).Where(t => t.Equipa.Id == id).Include(t => t.Equipa).Include(t => t.Equipa.Treinador);
+            return View(await projetoPvContext6.ToListAsync());
         }
 
         // GET: Treino/Details/5
@@ -48,8 +107,28 @@ namespace ProjetoPv.Controllers
         }
         [Authorize(Roles = "Admin, Treinadores")]
         // GET: Treino/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var user = await _userManager.GetUserAsync(User);
+            var treinador = _context.Treinadores.ToList();
+            foreach (var item in treinador)
+            {
+                if (user.Id == item.AspNetUsersId)
+                {
+                    var treinadorId = item.Id;
+                    foreach (var item1 in _context.Equipas.ToList())
+                    {
+                        if (item1.TreinadoresId == treinadorId)
+                        {
+                            var Equipa = item1;
+                            ViewData["Equipa"] = Equipa;
+                            return View();
+                        }
+                    }
+                }
+                
+            }
+
             ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome");
             return View();
         }

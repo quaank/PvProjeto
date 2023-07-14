@@ -35,19 +35,21 @@
                 <input asp-for="Localidade" class="form-control" />
                 <span asp-validation-for="Localidade" class="text-danger"></span>
             </div>
+           
             <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+            <div>
+                <a asp-action="Index">Back to List</a>
+            </div>
+            <div class="form-group" style="visibility:hidden">
                 <label asp-for="Resultados" class="control-label"></label>
                 <input asp-for="Resultados" class="form-control" />
                 <span asp-validation-for="Resultados" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 

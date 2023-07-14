@@ -73,7 +73,7 @@ namespace ProjetoPv.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,ModalidadesId,Modalidade,Categoria,TreinadoresId")] Equipas equipas)
+        public async Task<IActionResult> Create([Bind("Id,Nome,ModalidadesId,Modalidade,CategoriaId,Categoria,TreinadoresId")] Equipas equipas)
         {
             if (ModelState.IsValid)
             {
@@ -107,7 +107,7 @@ namespace ProjetoPv.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,ModalidadesId,Modalidade,Categoria,TreinadoresId")] Equipas equipas)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,ModalidadesId,Modalidade,CategoriaId,Categoria,TreinadoresId")] Equipas equipas)
         {
             if (id != equipas.Id)
             {
@@ -180,5 +180,11 @@ namespace ProjetoPv.Controllers
         {
           return (_context.Equipas?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        public IActionResult ListarAtletas(int? id)
+        {
+                return RedirectToAction("Index", "Atletas",id);
+        }
+    
     }
 }

@@ -25,6 +25,11 @@
                 <span asp-validation-for="EquipasId" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="EquipaOponente" class="control-label"></label>
+                <input asp-for="EquipaOponente" class="form-control" />
+                <span asp-validation-for="EquipaOponente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Data" class="control-label"></label>
                 <input asp-for="Data" class="form-control" />
                 <span asp-validation-for="Data" class="text-danger"></span>
@@ -43,10 +48,10 @@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+        
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 

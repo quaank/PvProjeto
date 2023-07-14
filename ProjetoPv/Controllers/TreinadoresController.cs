@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -15,17 +16,32 @@ namespace ProjetoPv.Controllers
     public class TreinadoresController : Controller
     {
         private readonly ProjetoPvContext _context;
+        private UserManager<ProjetoPvUser> _userManager;
 
-        public TreinadoresController(ProjetoPvContext context)
+        public TreinadoresController(ProjetoPvContext context, UserManager<ProjetoPvUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
+           
         }
 
         // GET: Treinadores
         public async Task<IActionResult> Index()
         {
-      
-            return View(await _context.Treinadores.ToListAsync());
+            var user = await _userManager.GetUserAsync(User);
+           
+            if (await _userManager.IsInRoleAsync(user, "Treinadores") && !user.HasClicked)
+            {
+                ViewData["User"] = user.Id;
+                user.HasClicked = true;
+                await _userManager.UpdateAsync(user);
+                return RedirectToAction("Create");
+            }
+            else
+            {
+                ViewData["User"] = user.Id;
+                return View(await _context.Treinadores.ToListAsync());
+            }
         }
 
         // GET: Treinadores/Details/5
@@ -45,11 +61,12 @@ namespace ProjetoPv.Controllers
 
             return View(treinadores);
         }
-        [Authorize(Roles = "Admin")]
+
         // GET: Treinadores/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewData["EquipasId"] = new SelectList(_context.Equipas, "Id", "Nome");
+            var user = await _userManager.GetUserAsync(User);
+            ViewData["User"] = user.Id;
             return View();
         }
 
@@ -58,7 +75,7 @@ namespace ProjetoPv.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Contacto,Qualificacoes,EquipasId")] Treinadores treinadores)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Contacto,Qualificacoes,EquipasId,AspNetUsersId")] Treinadores treinadores)
         {
             if (ModelState.IsValid)
             {
